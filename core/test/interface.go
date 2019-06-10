@@ -20,9 +20,9 @@ package test
 import (
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	"github.com/dexon-foundation/dexon-consensus/core/db"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 )
 
 // BlockRevealer defines the interface to reveal a group

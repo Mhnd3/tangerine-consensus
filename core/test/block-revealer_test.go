@@ -20,9 +20,9 @@ package test
 import (
 	"testing"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/db"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"github.com/stretchr/testify/suite"
 )
 

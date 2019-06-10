@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto/ecdsa"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	"github.com/dexon-foundation/dexon-consensus/core/utils"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/ecdsa"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
 	"github.com/stretchr/testify/suite"
 )
 

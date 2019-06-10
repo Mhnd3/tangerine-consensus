@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/core/utils"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
 )
 
 // TickerType is the type of ticker.

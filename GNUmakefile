@@ -6,9 +6,9 @@ BINDIR := $(CURDIR)/build
 else
 BINDIR := $(abspath $(BINDIR))
 endif
-PROJECT_ROOT=github.com/dexon-foundation/dexon-consensus
+PROJECT_ROOT=gitlab.com/byzantine-lab/tangerine-consensus
 BLS_REPO = dexonfoundation/bls-go-alpine
-BLS_LIB = vendor/github.com/dexon-foundation/bls/lib/libbls384.a
+BLS_LIB = vendor/github.com/byzantine-lab/bls/lib/libbls384.a
 BUILDER_REPO = dexonfoundation/dexon-alpine
 
 ifeq ($(DOCKER),true)
@@ -60,8 +60,8 @@ ifneq ($(NO_TEST_RACE), true)
 endif
 
 COMPONENTS = \
-	dexcon-simulation \
-	dexcon-simulation-peer-server
+	tancon-simulation \
+	tancon-simulation-peer-server
 
 .PHONY: clean default
 

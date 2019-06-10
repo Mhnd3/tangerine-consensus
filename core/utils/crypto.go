@@ -21,10 +21,10 @@ import (
 	"bytes"
 	"encoding/binary"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	typesDKG "github.com/dexon-foundation/dexon-consensus/core/types/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
 )
 
 func hashWitness(witness *types.Witness) (common.Hash, error) {

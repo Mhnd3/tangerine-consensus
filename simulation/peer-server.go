@@ -25,10 +25,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/test"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 // PeerServer is the main object to collect results and monitor simulation.

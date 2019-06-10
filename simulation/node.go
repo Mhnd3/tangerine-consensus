@@ -22,13 +22,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	"github.com/dexon-foundation/dexon-consensus/core/db"
-	"github.com/dexon-foundation/dexon-consensus/core/test"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 type serverNotification string

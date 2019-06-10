@@ -22,8 +22,8 @@ import (
 	"math"
 	"os"
 
-	"github.com/dexon-foundation/dexon-consensus/core"
-	"github.com/dexon-foundation/dexon-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
 	"github.com/naoina/toml"
 )
 

@@ -21,8 +21,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/dexon-foundation/dexon-consensus/core/test"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 func calculateMeanStdDeviationFloat64s(a []float64) (float64, float64) {

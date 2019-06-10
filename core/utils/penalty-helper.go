@@ -20,8 +20,8 @@ package utils
 import (
 	"errors"
 
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	typesDKG "github.com/dexon-foundation/dexon-consensus/core/types/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
 )
 
 var (

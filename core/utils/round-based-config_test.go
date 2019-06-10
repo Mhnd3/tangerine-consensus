@@ -20,7 +20,7 @@ package utils
 import (
 	"testing"
 
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"github.com/stretchr/testify/suite"
 )
 

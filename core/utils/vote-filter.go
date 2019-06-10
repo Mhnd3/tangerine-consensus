@@ -18,7 +18,7 @@
 package utils
 
 import (
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 )
 
 // VoteFilter filters votes that are useless for now.

@@ -22,9 +22,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto/dkg"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"github.com/stretchr/testify/suite"
 )
 

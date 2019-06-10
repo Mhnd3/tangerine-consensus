@@ -24,11 +24,11 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	cryptoDKG "github.com/dexon-foundation/dexon-consensus/core/crypto/dkg"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	"github.com/dexon-foundation/dexon/rlp"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	cryptoDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/byzantine-lab/go-tangerine/rlp"
 )
 
 type DKGTestSuite struct {

@@ -23,10 +23,10 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/test"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	"github.com/dexon-foundation/dexon-consensus/core/utils"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
 )
 
 type UtilsTestSuite struct {

@@ -25,12 +25,12 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/dexon-foundation/bls/ffi/go/bls"
-	"github.com/dexon-foundation/dexon/rlp"
+	"github.com/byzantine-lab/bls/ffi/go/bls"
+	"github.com/byzantine-lab/go-tangerine/rlp"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
 )
 
 type DKGTestSuite struct {

@@ -20,7 +20,7 @@ package core
 import (
 	"fmt"
 
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 )
 
 // Errors for agreement state module.

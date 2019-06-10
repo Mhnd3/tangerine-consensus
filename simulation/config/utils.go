@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/dexon-foundation/dexon-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
 )
 
 // StateChangeTypeFromString convert a string to test.StateChangeType.

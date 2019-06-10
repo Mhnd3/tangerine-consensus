@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 )
 
 // RoundBasedConfig is based config for rounds and provide boundary checking

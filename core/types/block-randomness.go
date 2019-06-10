@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
 )
 
 // AgreementResult describes an agremeent result.

@@ -29,8 +29,8 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/simulation"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 var initialize = flag.Bool("init", false, "initialize config file")

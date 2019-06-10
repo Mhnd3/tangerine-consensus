@@ -24,12 +24,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto/ecdsa"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	typesDKG "github.com/dexon-foundation/dexon-consensus/core/types/dkg"
-	"github.com/dexon-foundation/dexon/rlp"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/ecdsa"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
+	"github.com/byzantine-lab/go-tangerine/rlp"
 )
 
 var (

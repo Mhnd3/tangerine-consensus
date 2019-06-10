@@ -24,13 +24,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
-	cryptoDKG "github.com/dexon-foundation/dexon-consensus/core/crypto/dkg"
-	"github.com/dexon-foundation/dexon-consensus/core/db"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
-	typesDKG "github.com/dexon-foundation/dexon-consensus/core/types/dkg"
-	"github.com/dexon-foundation/dexon-consensus/core/utils"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	cryptoDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
 )
 
 // Errors for consensus core.

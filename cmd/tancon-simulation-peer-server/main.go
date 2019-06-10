@@ -22,8 +22,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/dexon-foundation/dexon-consensus/simulation"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 var configFile = flag.String("config", "", "path to simulation config file")

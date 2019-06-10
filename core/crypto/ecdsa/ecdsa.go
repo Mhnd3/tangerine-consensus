@@ -20,10 +20,10 @@ package ecdsa
 import (
 	"crypto/ecdsa"
 
-	dexCrypto "github.com/dexon-foundation/dexon/crypto"
+	dexCrypto "github.com/byzantine-lab/go-tangerine/crypto"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
 )
 
 const cryptoType = "ecdsa"

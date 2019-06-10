@@ -13,7 +13,7 @@ DEXON Consensus
 
 1. Clone the repo
     ```
-    git clone https://github.com/dexon-foundation/dexon-consensus.git
+    git clone https://gitlab.com/byzantine-lab/tangerine-consensus.git
     cd dexon-consensus
     ```
 

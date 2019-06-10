@@ -23,12 +23,12 @@ import (
 	"os"
 	"sync"
 
-	"github.com/dexon-foundation/dexon/log"
+	"github.com/byzantine-lab/go-tangerine/log"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto/ecdsa"
-	"github.com/dexon-foundation/dexon-consensus/core/test"
-	"github.com/dexon-foundation/dexon-consensus/simulation/config"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/ecdsa"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
 )
 
 // Run starts the simulation.

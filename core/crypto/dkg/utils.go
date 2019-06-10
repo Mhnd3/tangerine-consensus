@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/dexon-foundation/bls/ffi/go/bls"
+	"github.com/byzantine-lab/bls/ffi/go/bls"
 
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
 )
 
 // PartialSignature is a partial signature in DKG+TSIG protocol.

@@ -23,8 +23,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/types"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 )
 
 // slowApp is an Application instance slow things down in every method.

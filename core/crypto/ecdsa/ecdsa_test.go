@@ -20,8 +20,8 @@ package ecdsa
 import (
 	"testing"
 
-	"github.com/dexon-foundation/dexon-consensus/common"
-	"github.com/dexon-foundation/dexon-consensus/core/crypto"
+	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
 	"github.com/stretchr/testify/suite"
 )
 
