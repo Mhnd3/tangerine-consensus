@@ -26,6 +26,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/suite"
 	"gitlab.com/byzantine-lab/tangerine-consensus/common"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
@@ -33,7 +34,6 @@ import (
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
-	"github.com/stretchr/testify/suite"
 )
 
 // There is no scheduler in these tests, we need to wait a long period to make
@@ -169,7 +169,7 @@ func (s *ByzantineTestSuite) TestOneSlowNodeOneDeadNode() {
 		if n.ID == deadNodeID {
 			continue
 		}
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 		defer n.con.Stop()
 	}
 	// Clean deadNode's network receive channel, or it might exceed the limit
@@ -235,7 +235,7 @@ func (s *ByzantineTestSuite) TestOneNodeWithoutVote() {
 	votelessNode := nodes[votelessNodeID]
 	votelessNode.network.SetCensor(&voteCensor{}, &voteCensor{})
 	for _, n := range nodes {
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 		defer n.con.Stop()
 	}
 Loop:

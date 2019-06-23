@@ -352,7 +352,7 @@ func (s *ConsensusTestSuite) TestSyncBA() {
 	s.Require().NoError(err)
 	prvKey := prvKeys[0]
 	_, con := s.prepareConsensus(time.Now().UTC(), gov, prvKey, conn)
-	go con.Run()
+	go con.Run(make(chan struct{}))
 	defer con.Stop()
 	hash := common.NewRandomHash()
 	signers := make([]*utils.Signer, 0, len(prvKeys))

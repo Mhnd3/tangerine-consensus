@@ -26,6 +26,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/stretchr/testify/suite"
 	"gitlab.com/byzantine-lab/tangerine-consensus/common"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
@@ -34,7 +35,6 @@ import (
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
-	"github.com/stretchr/testify/suite"
 )
 
 // There is no scheduler in these tests, we need to wait a long period to make
@@ -286,7 +286,7 @@ func (s *ConsensusTestSuite) TestSimple() {
 	// A short round interval.
 	nodes := s.setupNodes(dMoment, prvKeys, seedGov)
 	for _, n := range nodes {
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 		defer n.con.Stop()
 	}
 Loop:
@@ -366,7 +366,7 @@ func (s *ConsensusTestSuite) TestSetSizeChange() {
 		5, test.StateChangeNotarySetSize, uint32(4)))
 	// Run test.
 	for _, n := range nodes {
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 		defer n.con.Stop()
 	}
 Loop:
@@ -431,7 +431,7 @@ func (s *ConsensusTestSuite) TestSync() {
 		n.rEvt.Register(govHandlerGen(1, 0, n.gov, prohibitDKG))
 		n.rEvt.Register(govHandlerGen(1, 1, n.gov, unprohibitDKG))
 		if n.ID != syncNode.ID {
-			go n.con.Run()
+			go n.con.Run(make(chan struct{}))
 			if n.ID != stoppedNode.ID {
 				defer n.con.Stop()
 			}
@@ -497,7 +497,7 @@ ReachAlive:
 				stoppedNode, syncNode, syncerObj, syncedHeight)
 			if syncedCon != nil {
 				syncNode.con = syncedCon
-				go syncNode.con.Run()
+				go syncNode.con.Run(make(chan struct{}))
 				go func() {
 					<-runnerCtx.Done()
 					syncNode.con.Stop()
@@ -586,7 +586,7 @@ func (s *ConsensusTestSuite) TestForceSync() {
 	// A short round interval.
 	nodes := s.setupNodes(dMoment, prvKeys, seedGov)
 	for _, n := range nodes {
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 	}
 ReachStop:
 	for {
@@ -690,7 +690,7 @@ ReachStop:
 		nodes[nID].con = con
 	}
 	for _, node := range nodes {
-		go node.con.Run()
+		go node.con.Run(make(chan struct{}))
 		defer node.con.Stop()
 	}
 
@@ -744,7 +744,7 @@ func (s *ConsensusTestSuite) TestResetDKG() {
 		n.rEvt.Register(govHandlerGen(1, 2, n.gov, unprohibitDKG))
 		n.rEvt.Register(govHandlerGen(2, 0, n.gov, prohibitDKGExceptFinalize))
 		n.rEvt.Register(govHandlerGen(2, 1, n.gov, unprohibitDKG))
-		go n.con.Run()
+		go n.con.Run(make(chan struct{}))
 	}
 Loop:
 	for {

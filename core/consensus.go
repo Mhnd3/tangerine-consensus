@@ -1007,7 +1007,7 @@ func (con *Consensus) prepare(initBlock *types.Block) (err error) {
 }
 
 // Run starts running DEXON Consensus.
-func (con *Consensus) Run() {
+func (con *Consensus) Run(stopChan chan<- struct{}) {
 	// There may have emptys block in blockchain added by force sync.
 	blocksWithoutRandomness := con.bcModule.pendingBlocksWithoutRandomness()
 	// Launch BA routines.
@@ -1047,7 +1047,7 @@ func (con *Consensus) Run() {
 	// Take some time to bootstrap.
 	time.Sleep(3 * time.Second)
 	con.waitGroup.Add(1)
-	go con.deliveryGuard()
+	go con.deliveryGuard(stopChan)
 	// Block until done.
 	select {
 	case <-con.ctx.Done():
@@ -1442,7 +1442,7 @@ func (con *Consensus) processFinalizedBlock(b *types.Block) (err error) {
 	return
 }
 
-func (con *Consensus) deliveryGuard() {
+func (con *Consensus) deliveryGuard(stopChan chan<- struct{}) {
 	defer con.waitGroup.Done()
 	select {
 	case <-con.ctx.Done():
@@ -1465,7 +1465,9 @@ func (con *Consensus) deliveryGuard() {
 		case <-con.resetDeliveryGuardTicker:
 		case <-time.After(60 * time.Second):
 			con.logger.Error("No blocks delivered for too long", "ID", con.ID)
-			panic(fmt.Errorf("No blocks delivered for too long"))
+			stopChan <- struct{}{}
+			con.ctxCancel()
+			return
 		}
 	}
 }

@@ -172,7 +172,7 @@ readyLoop:
 		n.netModule,
 		n.prvKey,
 		n.logger)
-	go n.consensus.Run()
+	go n.consensus.Run(make(chan struct{}))
 
 	// Blocks forever.
 MainLoop:
