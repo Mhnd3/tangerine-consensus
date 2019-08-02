@@ -294,7 +294,7 @@ func (e *RoundEvent) check(blockHeight, startRound uint64) (
 		param.CRS = GetCRSWithPanic(e.gov, e.lastTriggeredRound, e.logger)
 		param.Config = GetConfigWithPanic(e.gov, e.lastTriggeredRound, e.logger)
 		e.logger.Info("New RoundEvent triggered",
-			"round", e.lastTriggeredRound,
+			"round", e.lastTriggeredRound+1,
 			"reset", e.lastTriggeredResetCount,
 			"begin-height", e.config.LastPeriodBeginHeight(),
 			"crs", param.CRS.String()[:6],
