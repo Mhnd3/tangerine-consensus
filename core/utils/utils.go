@@ -134,6 +134,11 @@ func LaunchDummyReceiver(
 	return dummyCancel, finishedChan
 }
 
+// GetDKGNackThreshold return expected threshold for given nacking DKG set.
+func GetDKGNackThreshold(config *types.Config) int {
+	return int(config.NotarySetSize*1/3) + 1
+}
+
 // GetDKGThreshold return expected threshold for given DKG set size.
 func GetDKGThreshold(config *types.Config) int {
 	return int(config.NotarySetSize*2/3) + 1
