@@ -176,7 +176,7 @@ func NewRoundEvent(parentCtx context.Context, gov governanceAccessor,
 	*RoundEvent, error) {
 	// We need to generate valid ending block height of this round (taken
 	// DKG reset count into consideration).
-	logger.Info("new RoundEvent", "position", initPos, "shift", roundShift)
+	logger.Info("New RoundEvent", "position", initPos, "shift", roundShift)
 	initConfig := GetConfigWithPanic(gov, initPos.Round, logger)
 	e := &RoundEvent{
 		gov:                gov,
