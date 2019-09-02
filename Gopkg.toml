@@ -27,11 +27,11 @@
 
 [[constraint]]
   branch = "dev"
-  name = "github.com/dexon-foundation/bls"
+  name = "gitlab.com/byzantine-lab/bls"
 
 [[constraint]]
   branch = "master"
-  name = "github.com/dexon-foundation/dexon"
+  name = "gitlab.com/byzantine-lab/dexon"
 
 [[constraint]]
   name = "github.com/naoina/toml"

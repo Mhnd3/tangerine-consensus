@@ -1,0 +1,80 @@
+image: "golang:1.11"
+
+before_script:
+  - apt-get update
+  - apt-get install -y openssl libgmp3-dev git make bash gcc libc-dev g++
+  - mkdir -p $GOPATH/src/gitlab.com/
+  - mv /builds/byzantine-lab $GOPATH/src/gitlab.com
+  - mkdir -p /builds/byzantine-lab/tangerine-consensus
+  - cd $GOPATH/src/gitlab.com/byzantine-lab/tangerine-consensus
+  - bin/install_tools.sh
+  - dep ensure -v
+  - make dep
+
+stages:
+  - lint
+  - test
+
+lint:
+  tags:
+    - generic
+  stage: lint
+  script:
+    - make lint
+    - make vet
+
+test-integration-without-race:
+  tags:
+    - generic
+  stage: test
+  script:
+    - ONLY_INTEGRATION_TEST=true NO_TEST_RACE=true make test
+  only:
+    - master
+
+test-integration-with-race:
+  tags:
+    - generic
+  stage: test
+  script:
+    - ONLY_INTEGRATION_TEST=true make test
+  only:
+    - master
+  allow_failure: true
+
+test-no-integration:
+  tags:
+    - generic
+  stage: test
+  script:
+    - NO_INTEGRATION_TEST=true make test
+  only:
+    - master
+
+test-short-integration-without-race:
+  tags:
+    - generic
+  stage: test
+  script:
+    - ONLY_INTEGRATION_TEST=true NO_TEST_RACE=true make test-short
+  except:
+    - master
+
+test-short-integration-with-race:
+  tags:
+    - generic
+  stage: test
+  script:
+    - ONLY_INTEGRATION_TEST=true make test-short
+  except:
+    - master
+  allow_failure: true
+
+test-short-no-integration:
+  tags:
+    - generic
+  stage: test
+  script:
+    - NO_INTEGRATION_TEST=true make test-short
+  except:
+    - master

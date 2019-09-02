@@ -107,7 +107,7 @@ func (s *WatchCatTestSuite) TestBasicUsage() {
 	}
 
 	rec.lock.Lock()
-	rec.votes[pos.Height] = uint64(notarySet/2 + 1)
+	rec.votes[pos.Height] = uint64((notarySet * 2 / 3) + 1)
 	rec.lock.Unlock()
 
 	time.Sleep(polling * 2)

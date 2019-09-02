@@ -10,25 +10,17 @@
   revision = "9bfb2ca0346b57e246cc96fa31074df521175240"
 
 [[projects]]
-  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
-  name = "github.com/davecgh/go-spew"
-  packages = ["spew"]
-  pruneopts = "UT"
-  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
-  version = "v1.1.1"
-
-[[projects]]
-  branch = "dev"
-  digest = "1:989ca7617ed87c5fa460e9f63414d797fd0d2dd07cdda0b6d6d3e7450e002b1f"
-  name = "github.com/dexon-foundation/bls"
+  branch = "master"
+  digest = "1:2459b6301dc545a036c458f08de757156be3d860cbaf9136d13bbcbfb91fe076"
+  name = "github.com/byzantine-lab/bls"
   packages = ["ffi/go/bls"]
   pruneopts = "UT"
-  revision = "b0a83abe7389df7f4c45adc3b52d957f3996322d"
+  revision = "5e8e1cd9adf37e993a5bea2ad116e107652f0301"
 
 [[projects]]
   branch = "master"
-  digest = "1:e42fe948f1217b0c47b482f08e99ebcb66d5eaf02a1048128708a0156edea8f5"
-  name = "github.com/dexon-foundation/dexon"
+  digest = "1:cebb704f755e322f2b3594a3d059749ca4736ae36fbfc6e895ae7a4366d7efe5"
+  name = "github.com/byzantine-lab/go-tangerine"
   packages = [
     "common",
     "common/hexutil",
@@ -38,7 +30,15 @@
     "rlp",
   ]
   pruneopts = "UT"
-  revision = "31d2950d993b00d743fb61c887752d25adfd6703"
+  revision = "872c464cb12cf7ac6df7b9094994b043eeb228bc"
+
+[[projects]]
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  pruneopts = "UT"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
 
 [[projects]]
   digest = "1:fed20bf7f0da387c96d4cfc140a95572e5aba4bb984beb7de910e090ae39849b"
@@ -158,10 +158,10 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/dexon-foundation/bls/ffi/go/bls",
-    "github.com/dexon-foundation/dexon/crypto",
-    "github.com/dexon-foundation/dexon/log",
-    "github.com/dexon-foundation/dexon/rlp",
+    "github.com/byzantine-lab/bls/ffi/go/bls",
+    "github.com/byzantine-lab/go-tangerine/crypto",
+    "github.com/byzantine-lab/go-tangerine/log",
+    "github.com/byzantine-lab/go-tangerine/rlp",
     "github.com/hashicorp/golang-lru",
     "github.com/naoina/toml",
     "github.com/stretchr/testify/suite",

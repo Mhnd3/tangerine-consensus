@@ -106,9 +106,8 @@ func (wc *WatchCat) Start() {
 		}()
 		defer wc.cancel()
 		proposed := false
-		threshold := uint64(
-			utils.GetConfigWithPanic(wc.configReader, lastPos.Round, wc.logger).
-				NotarySetSize / 2)
+		threshold := uint64(utils.GetDKGThreshold(
+			utils.GetConfigWithPanic(wc.configReader, lastPos.Round, wc.logger)))
 		wc.logger.Info("Threshold for recovery", "votes", threshold)
 	ResetLoop:
 		for {
@@ -124,7 +123,7 @@ func (wc *WatchCat) Start() {
 			votes, err := wc.recovery.Votes(lastPos.Height)
 			if err != nil {
 				wc.logger.Error("Failed to get recovery votes", "height", lastPos.Height, "error", err)
-			} else if votes > threshold {
+			} else if votes >= threshold {
 				wc.logger.Info("Threshold for recovery reached!")
 				wc.lastPosition = lastPos
 				break ResetLoop
