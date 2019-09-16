@@ -18,7 +18,7 @@
 package dkg
 
 import (
-	"github.com/byzantine-lab/bls/ffi/go/bls"
+	"github.com/tangerine-network/bls/ffi/go/bls"
 )
 
 const (

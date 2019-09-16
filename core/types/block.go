@@ -25,10 +25,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/byzantine-lab/go-tangerine/rlp"
+	"github.com/tangerine-network/go-tangerine/rlp"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
 )
 
 // GenesisHeight refers to the initial height the genesis block should be.

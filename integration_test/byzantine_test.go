@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/suite"
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/db"
+	"github.com/tangerine-network/tangerine-consensus/core/test"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/core/utils"
 )
 
 // There is no scheduler in these tests, we need to wait a long period to make

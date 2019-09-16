@@ -22,10 +22,10 @@ import (
 	"os"
 	"testing"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 type MemBackedDBTestSuite struct {

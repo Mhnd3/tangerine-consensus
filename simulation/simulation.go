@@ -23,12 +23,12 @@ import (
 	"os"
 	"sync"
 
-	"github.com/byzantine-lab/go-tangerine/log"
+	"github.com/tangerine-network/go-tangerine/log"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/ecdsa"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
-	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto/ecdsa"
+	"github.com/tangerine-network/tangerine-consensus/core/test"
+	"github.com/tangerine-network/tangerine-consensus/simulation/config"
 )
 
 // Run starts the simulation.

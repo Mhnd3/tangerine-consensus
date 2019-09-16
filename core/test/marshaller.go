@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
 )
 
 // DefaultMarshaller is the default marshaller for testing core.Consensus.

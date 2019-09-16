@@ -22,9 +22,9 @@ import (
 	"math"
 	"os"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
 	"github.com/naoina/toml"
+	"github.com/tangerine-network/tangerine-consensus/core"
+	"github.com/tangerine-network/tangerine-consensus/core/test"
 )
 
 // Consensus settings.

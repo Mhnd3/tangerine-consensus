@@ -20,8 +20,8 @@ package utils
 import (
 	"testing"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
 	"github.com/stretchr/testify/suite"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 type RoundBasedConfigTestSuite struct {

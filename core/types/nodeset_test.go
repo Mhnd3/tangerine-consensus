@@ -20,8 +20,8 @@ package types
 import (
 	"testing"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
 	"github.com/stretchr/testify/suite"
+	"github.com/tangerine-network/tangerine-consensus/common"
 )
 
 type NodeSetTestSuite struct {

@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
-	"github.com/byzantine-lab/go-tangerine/rlp"
+	"github.com/tangerine-network/go-tangerine/rlp"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
 )
 
 // StateChangeType is the type of state change request.

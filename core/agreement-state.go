@@ -20,7 +20,7 @@ package core
 import (
 	"fmt"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 // Errors for agreement state module.

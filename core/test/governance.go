@@ -25,11 +25,11 @@ import (
 	"sort"
 	"sync"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/ecdsa"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto/ecdsa"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
 )
 
 // TODO(mission): add a method to compare config/crs between governance

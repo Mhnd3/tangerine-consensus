@@ -21,8 +21,8 @@ import (
 	"math"
 	"sort"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
-	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
+	"github.com/tangerine-network/tangerine-consensus/core/test"
+	"github.com/tangerine-network/tangerine-consensus/simulation/config"
 )
 
 func calculateMeanStdDeviationFloat64s(a []float64) (float64, float64) {

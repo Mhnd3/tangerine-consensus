@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 type fakePeerRecord struct {

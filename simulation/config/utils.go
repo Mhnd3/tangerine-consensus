@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/test"
+	"github.com/tangerine-network/tangerine-consensus/core/test"
 )
 
 // StateChangeTypeFromString convert a string to test.StateChangeType.

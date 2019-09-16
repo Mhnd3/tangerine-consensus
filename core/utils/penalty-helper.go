@@ -20,8 +20,8 @@ package utils
 import (
 	"errors"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
 )
 
 var (

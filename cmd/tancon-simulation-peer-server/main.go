@@ -22,8 +22,8 @@ import (
 	"log"
 	"os"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/simulation"
-	"gitlab.com/byzantine-lab/tangerine-consensus/simulation/config"
+	"github.com/tangerine-network/tangerine-consensus/simulation"
+	"github.com/tangerine-network/tangerine-consensus/simulation/config"
 )
 
 var configFile = flag.String("config", "", "path to simulation config file")

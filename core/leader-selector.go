@@ -21,9 +21,9 @@ import (
 	"math/big"
 	"sync"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 type validLeaderFn func(block *types.Block, crs common.Hash) (bool, error)

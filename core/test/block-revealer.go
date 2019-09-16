@@ -21,9 +21,9 @@ import (
 	"errors"
 	"sort"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/db"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 // Errors returns from block-revealer.

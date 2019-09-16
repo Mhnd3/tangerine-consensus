@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/core"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/core"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 type SimAppSuite struct {

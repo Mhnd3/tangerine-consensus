@@ -21,9 +21,9 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/byzantine-lab/go-tangerine/crypto"
+	"github.com/tangerine-network/go-tangerine/crypto"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/common"
 )
 
 var (

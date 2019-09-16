@@ -20,8 +20,8 @@ package test
 import (
 	"testing"
 
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
 	"github.com/stretchr/testify/suite"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
 )
 
 type StateChangeRequestTestSuite struct {

@@ -4,9 +4,9 @@ before_script:
   - apt-get update
   - apt-get install -y openssl libgmp3-dev git make bash gcc libc-dev g++
   - mkdir -p $GOPATH/src/gitlab.com/
-  - mv /builds/byzantine-lab $GOPATH/src/gitlab.com
-  - mkdir -p /builds/byzantine-lab/tangerine-consensus
-  - cd $GOPATH/src/gitlab.com/byzantine-lab/tangerine-consensus
+  - mv /builds/tangerine-network $GOPATH/src/github.com
+  - mkdir -p /builds/tangerine-network/tangerine-consensus
+  - cd $GOPATH/src/github.com/tangerine-network/tangerine-consensus
   - bin/install_tools.sh
   - dep ensure -v
   - make dep

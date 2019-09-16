@@ -26,14 +26,6 @@
 
 
 [[constraint]]
-  branch = "dev"
-  name = "gitlab.com/byzantine-lab/bls"
-
-[[constraint]]
-  branch = "master"
-  name = "gitlab.com/byzantine-lab/dexon"
-
-[[constraint]]
   name = "github.com/naoina/toml"
   version = "0.1.1"
 

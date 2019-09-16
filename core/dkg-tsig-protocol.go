@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"sync"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/db"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
-	typesDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/types/dkg"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/utils"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/db"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
+	typesDKG "github.com/tangerine-network/tangerine-consensus/core/types/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/utils"
 )
 
 // Errors for dkg module.

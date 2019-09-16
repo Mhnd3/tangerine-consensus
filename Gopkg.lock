@@ -10,29 +10,6 @@
   revision = "9bfb2ca0346b57e246cc96fa31074df521175240"
 
 [[projects]]
-  branch = "master"
-  digest = "1:2459b6301dc545a036c458f08de757156be3d860cbaf9136d13bbcbfb91fe076"
-  name = "github.com/byzantine-lab/bls"
-  packages = ["ffi/go/bls"]
-  pruneopts = "UT"
-  revision = "5e8e1cd9adf37e993a5bea2ad116e107652f0301"
-
-[[projects]]
-  branch = "master"
-  digest = "1:cebb704f755e322f2b3594a3d059749ca4736ae36fbfc6e895ae7a4366d7efe5"
-  name = "github.com/byzantine-lab/go-tangerine"
-  packages = [
-    "common",
-    "common/hexutil",
-    "common/math",
-    "crypto",
-    "log",
-    "rlp",
-  ]
-  pruneopts = "UT"
-  revision = "872c464cb12cf7ac6df7b9094994b043eeb228bc"
-
-[[projects]]
   digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
@@ -137,6 +114,29 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:2459b6301dc545a036c458f08de757156be3d860cbaf9136d13bbcbfb91fe076"
+  name = "github.com/tangerine-network/bls"
+  packages = ["ffi/go/bls"]
+  pruneopts = "UT"
+  revision = "5e8e1cd9adf37e993a5bea2ad116e107652f0301"
+
+[[projects]]
+  branch = "master"
+  digest = "1:8cdce26c06a5ac16b7c3dfe942466cb705f9f8500ce468b06b111f1eea0cb9d8"
+  name = "github.com/tangerine-network/go-tangerine"
+  packages = [
+    "common",
+    "common/hexutil",
+    "common/math",
+    "crypto",
+    "log",
+    "rlp",
+  ]
+  pruneopts = "UT"
+  revision = "6141928cf960d950415a9bd0eebb533dba943826"
+
+[[projects]]
+  branch = "master"
   digest = "1:1e44db5e6902b7d1b1d24eac5753ecf43ff6f54e847353470eb539dbf9d3768e"
   name = "golang.org/x/crypto"
   packages = ["sha3"]
@@ -158,14 +158,14 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/byzantine-lab/bls/ffi/go/bls",
-    "github.com/byzantine-lab/go-tangerine/crypto",
-    "github.com/byzantine-lab/go-tangerine/log",
-    "github.com/byzantine-lab/go-tangerine/rlp",
     "github.com/hashicorp/golang-lru",
     "github.com/naoina/toml",
     "github.com/stretchr/testify/suite",
     "github.com/syndtr/goleveldb/leveldb",
+    "github.com/tangerine-network/bls/ffi/go/bls",
+    "github.com/tangerine-network/go-tangerine/crypto",
+    "github.com/tangerine-network/go-tangerine/log",
+    "github.com/tangerine-network/go-tangerine/rlp",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

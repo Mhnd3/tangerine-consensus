@@ -23,12 +23,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/byzantine-lab/go-tangerine/rlp"
+	"github.com/tangerine-network/go-tangerine/rlp"
 
-	"gitlab.com/byzantine-lab/tangerine-consensus/common"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/crypto"
-	cryptoDKG "gitlab.com/byzantine-lab/tangerine-consensus/core/crypto/dkg"
-	"gitlab.com/byzantine-lab/tangerine-consensus/core/types"
+	"github.com/tangerine-network/tangerine-consensus/common"
+	"github.com/tangerine-network/tangerine-consensus/core/crypto"
+	cryptoDKG "github.com/tangerine-network/tangerine-consensus/core/crypto/dkg"
+	"github.com/tangerine-network/tangerine-consensus/core/types"
 )
 
 // Errors for typesDKG package.
