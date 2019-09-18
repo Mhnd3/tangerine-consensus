@@ -133,7 +133,7 @@
     "rlp",
   ]
   pruneopts = "UT"
-  revision = "6141928cf960d950415a9bd0eebb533dba943826"
+  revision = "dfb2aed0282a889154318739e12374dd1cf6a431"
 
 [[projects]]
   branch = "master"
